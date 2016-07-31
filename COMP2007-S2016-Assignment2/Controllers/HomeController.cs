@@ -13,10 +13,13 @@ namespace COMP2007_S2016_Assignment2.Controllers
             return View();
         }
 
+        public ActionResult About()
+        {
+            return View();
+        }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
 
             return View();
         }
