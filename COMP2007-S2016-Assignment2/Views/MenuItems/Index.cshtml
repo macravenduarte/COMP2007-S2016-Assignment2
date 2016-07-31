@@ -14,16 +14,16 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ItemName)
+            <p>Name</p>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ItemPrice)
+            <p>Price</p>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ShortDesc)
+            <p>Description</p>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ThumbnailURL)
+            
         </th>
         <th></th>
     </tr>
@@ -40,7 +40,7 @@
             @Html.DisplayFor(modelItem => item.ShortDesc)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ThumbnailURL)
+            <img src="@Html.DisplayFor(modelItem => item.ThumbnailURL)" />
         </td>
         @if (User.Identity.IsAuthenticated)
         {
