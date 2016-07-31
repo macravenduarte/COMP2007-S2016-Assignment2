@@ -5,6 +5,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
+//File: MenuItems.cs
+//Authors: Amanda, Anthony
+//Website: http://comp2007-s2016-assignment2-restaurant.azurewebsites.net
+//Description: this is the database set up for the menu page
+
 namespace COMP2007_S2016_Assignment2.Models
 {
     public class MenuItems

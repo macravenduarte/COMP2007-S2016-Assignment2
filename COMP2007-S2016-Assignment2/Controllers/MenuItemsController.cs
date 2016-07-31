@@ -9,6 +9,11 @@ using System.Web;
 using System.Web.Mvc;
 using COMP2007_S2016_Assignment2.Models;
 
+//File: Contact.cshtml
+//Authors: Amanda, Anthony
+//Website: http://comp2007-s2016-assignment2-restaurant.azurewebsites.net
+//Description: Auto generated controller for the menu items 
+
 namespace COMP2007_S2016_Assignment2.Controllers
 {
     public class MenuItemsController : Controller
