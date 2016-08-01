@@ -320,6 +320,10 @@
     <Content Include="Content\images\map-pin.png" />
     <Content Include="Content\images\openhand.cur" />
     <Content Include="Content\images\timer.png" />
+    <Content Include="Scripts\classie.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.themepunch.tools.min.js" />
+    <Content Include="Scripts\scripts.js" />
     <Content Include="Content\type\budicons.css" />
     <Content Include="Content\type\fontello.css" />
     <Content Include="favicon.ico" />

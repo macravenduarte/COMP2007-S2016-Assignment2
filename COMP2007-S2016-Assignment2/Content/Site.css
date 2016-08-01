@@ -420,3 +420,26 @@ figure a .text-overlay .info span {
     color:black;
     text-decoration:none;
 }
+
+ .menu .section-title.pull-left {
+        float: none !important
+    }
+    .menu #filters-container.pull-right {
+        float: none !important;
+        text-align: left;
+    }
+
+  .menu-item {
+      min-height: 500px;
+  }
+
+  .cbp img{
+     
+      min-height: 300px;
+      width:auto;
+  }
+
+  .food-pic{
+      max-height: 400px;
+      width:auto;
+  }

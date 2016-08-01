@@ -22,7 +22,9 @@ namespace COMP2007_S2016_Assignment2
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js",
-                      "~/Scripts/plugins.js"));
+                      "~/Scripts/plugins.js",
+                      "~/Scripts/classie.js",
+                      "~/Scripts/scripts.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
@@ -30,6 +32,7 @@ namespace COMP2007_S2016_Assignment2
                       "~/Content/font-awesome.css",
                       "~/Content/css/plugins.css",
                       "~/Content/css/prettify.css",
+                      "~/Content/css/classie.css",
                       "~/Content/type/budicons.css",
                       "~/Content/type/fontello.css"));
 

@@ -42,17 +42,17 @@
         </dt>
 
         <dd>
-            <img src="@Html.DisplayFor(model => model.FullsizeURL)"/>
+            <img class="food-pic" src="@Html.DisplayFor(model => model.FullsizeURL)"/>
         </dd>
-
+        @if (User.Identity.IsAuthenticated)
+        {
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+            </p>
+        }
+        <p>
+            @Html.ActionLink("Back to List", "Index")
+        </p>
     </dl>
 </div>
-@if (User.Identity.IsAuthenticated)
-{
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
-    </p>
-}
-<p>
-    @Html.ActionLink("Back to List", "Index")
-</p>
+

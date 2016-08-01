@@ -7,56 +7,45 @@
     Authors: Amanda, Anthony
     Website: http://comp2007-s2016-assignment2-restaurant.azurewebsites.net
     Description: This page displays all menu items*@
-<h2>Index</h2>
 @if (User.Identity.IsAuthenticated)
 {
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
 }
-<table class="table">
-    <tr>
-        <th>
-            <p>Name</p>
-        </th>
-        <th>
-            <p>Price</p>
-        </th>
-        <th>
-            <p>Description</p>
-        </th>
-        <th>
-            
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.ActionLink(item.ItemName, "Details", new { id = item.ID })
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ItemPrice)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ShortDesc)
-        </td>
-        <td>
-            <img src="@Html.DisplayFor(modelItem => item.ThumbnailURL)" />
-        </td>
-        @if (User.Identity.IsAuthenticated)
-        {
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-            </td>
-        }
-    </tr>
-}
+            <h2 class="section-title pull-left">Take a look at our menu</h2>
+      
+            <div class="clearfix"></div>
 
-</table>
+            <div id="grid-container" class="cbp-l-grid-masonry">
 
+                <ul>
+                    @foreach (var item in Model)
+                    {
 
+                        <li class="cbp-item frame architecture menu-item">
+                                <div class="cbp-caption-defaultWrap">
+                                    <img class="" src="@Html.DisplayFor(modelItem => item.ThumbnailURL)" />
+                                </div>
+                                <h2>
+                                    @Html.ActionLink(item.ItemName, "Details", new { id = item.ID })
+                            </h2>
+                            <h3>
+                                @Html.DisplayFor(modelItem => item.ItemPrice)
+                        </h3>
+                        <h4>
+                            @Html.DisplayFor(modelItem => item.ShortDesc)
+                    </h4>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <h4>@Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    </h4>
+                    }
+            </li>
+            }
 
-
+            </ul>
+            </div>
+            <!-- /.cbp-l-grid-masonry -->
