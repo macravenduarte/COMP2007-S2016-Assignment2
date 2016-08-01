@@ -32,7 +32,6 @@ namespace COMP2007_S2016_Assignment2
                       "~/Content/font-awesome.css",
                       "~/Content/plugins.css",
                       "~/Content/prettify.css",
-                      "~/Content/classie.css",
                       "~/Content/budicons.css",
                       "~/Content/fontello.css"));
 
