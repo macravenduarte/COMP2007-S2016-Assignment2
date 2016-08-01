@@ -6,7 +6,19 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCrnTI18g9Wt3BUAm3atHMOBGCY1xmKKpY"></script>
+    <script>
+function initialize() {
+  var mapProp = {
+      center: new google.maps.LatLng(44.3954633, -79.6975057),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
 
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 @*File: _layout.cshtml

@@ -482,3 +482,4 @@ var instagramFeed = new Instafeed({
 $('#instafeed').each(function() {
     instagramFeed.run();
 });
+
