@@ -14,38 +14,39 @@
     </p>
 }
 
-            <h2 class="section-title pull-left">Take a look at our menu</h2>
-      
-            <div class="clearfix"></div>
+<h2 class="section-title pull-left">Take a look at our menu</h2>
 
-            <div id="grid-container" class="cbp-l-grid-masonry">
+<div class="clearfix"></div>
 
-                <ul>
-                    @foreach (var item in Model)
-                    {
 
-                        <li class="cbp-item frame architecture menu-item">
-                                <div class="cbp-caption-defaultWrap">
-                                    <img src="@Html.DisplayFor(modelItem => item.ThumbnailURL)" />
-                                </div>
-                                <h2>
-                                    @Html.ActionLink(item.ItemName, "Details", new { id = item.ID })
-                            </h2>
-                            <h3>
-                                @Html.DisplayFor(modelItem => item.ItemPrice)
-                        </h3>
-                        <h4>
-                            @Html.DisplayFor(modelItem => item.ShortDesc)
-                    </h4>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <h4>@Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-                    </h4>
-                    }
+
+    <ul>
+        @foreach (var item in Model)
+        {
+
+            <li>
+                <div class="cbp-caption-defaultWrap">
+                    <img src="@Html.DisplayFor(modelItem => item.ThumbnailURL)" />
+                </div>
+                <h2>
+                    @Html.ActionLink(item.ItemName, "Details", new { id = item.ID })
+                </h2>
+                <h3>
+                    @Html.DisplayFor(modelItem => item.ItemPrice)
+                </h3>
+                <h4>
+                    @Html.DisplayFor(modelItem => item.ShortDesc)
+                </h4>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <h4>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </h4>
+                }
             </li>
-            }
+        }
 
-            </ul>
-            </div>
-            <!-- /.cbp-l-grid-masonry -->
+    </ul>
+
+<!-- /.cbp-l-grid-masonry -->
