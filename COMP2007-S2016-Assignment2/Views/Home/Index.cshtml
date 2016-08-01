@@ -6,6 +6,23 @@
   Website: http://comp2007-s2016-assignment2-restaurant.azurewebsites.net
   Description: This is the main page for the restaurant*@
 
-<div class="row">
-@Html.ActionLink("MENU", "Index", "MenuItems", new { area = "" }, new { @class = "btn btn-danger" })
-</div>
+
+        <h2 class="section-title">Who Are We?</h2>
+        <div class="row">
+            <div class="col-md-5 col-md-push-7 col-sm-12">
+                <figure class="frame"><img src="Content/images/art/sushiresto.jpg" alt="" /></figure>
+            </div>
+            <!-- /column -->
+            <div class="col-md-7 col-md-pull-5 col-sm-12">
+                <p class="lead">Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna. </p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus. </p>
+                <p>Tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            </div>
+            <!-- /column -->
+        </div>
+        <!-- /.row -->
+
+        <h2 >@Html.ActionLink("View Our Menu", "Index","MenuItems", new { area = "" }, new { @class = "menu-button" })
+</h2>
+     
+
