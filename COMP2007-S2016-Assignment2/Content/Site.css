@@ -420,3 +420,54 @@ figure a .text-overlay .info span {
     color:black;
     text-decoration:none;
 }
+
+ .menu .section-title.pull-left {
+        float: none !important
+    }
+    .menu #filters-container.pull-right {
+        float: none !important;
+        text-align: left;
+    }
+
+  .menu-item {
+      min-height: 500px;
+  }
+
+  .cbp img{
+     
+      min-height: 300px;
+      width:auto;
+  }
+
+  .food-pic{
+      max-height: 400px;
+      width:auto;
+  }
+
+  .edit{
+    border: 2px solid #4d4d4d;
+    padding: 10px 10px;
+    border-radius: 100px;
+    background-color:pink;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #4d4d4d !important}
+ 
+
+.edit:hover{
+      background-color: white;
+    color:black;
+    text-decoration:none;
+}
+
+.back{
+        border: 2px solid #4d4d4d;
+    padding: 10px 10px;
+    border-radius: 100px;
+    background-color:pink;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #4d4d4d !important}
+}
