@@ -28,10 +28,10 @@ namespace COMP2007_S2016_Assignment2
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/font-awesome.css",
-                      "~/Content/css/plugins.css",
-                      "~/Content/css/prettify.css",
-                      "~/Content/type/budicons.css",
-                      "~/Content/type/fontello.css"));
+                      "~/Content/plugins.css",
+                      "~/Content/prettify.css",
+                      "~/Content/budicons.css",
+                      "~/Content/fontello.css"));
 
         }
     }

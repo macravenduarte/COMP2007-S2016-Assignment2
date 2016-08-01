@@ -188,9 +188,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\css\bootstrap.min.css" />
-    <Content Include="Content\css\plugins.css" />
-    <Content Include="Content\css\prettify.css" />
+    <Content Include="Content\bootstrapOR.min.css" />
+    <Content Include="Content\plugins.css" />
+    <Content Include="Content\prettify.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\images\art\93VZ2AWQLV.jpg" />
@@ -320,8 +320,8 @@
     <Content Include="Content\images\map-pin.png" />
     <Content Include="Content\images\openhand.cur" />
     <Content Include="Content\images\timer.png" />
-    <Content Include="Content\type\budicons.css" />
-    <Content Include="Content\type\fontello.css" />
+    <Content Include="Content\budicons.css" />
+    <Content Include="Content\fontello.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -400,6 +400,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\css\color\" />
+    <Folder Include="Content\type\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
